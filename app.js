@@ -1,6 +1,6 @@
-let kvaics = document.getElementById("ko")
-let papper = document.getElementById("papir")
-let ovlo = document.getElementById("ollo")
+let koimg = document.getElementById("ko")
+let papirimg = document.getElementById("papir")
+let olloimg = document.getElementById("ollo")
 
 let eredmeny= document.getElementById("eredmeny")
 let pontdiv = document.getElementById("pont")
@@ -8,18 +8,17 @@ let geppont = document.getElementById("geppont")
 
 let pontszam=0;
 let gepPontszam=0;
-
-function ko(){
+function rock(){
     koimg.style.border="2px solid red"
     papirimg.style.border="none";
     olloimg.style.border="none";
 }
-function papir(){
+function paper(){
     koimg.style.border="none"
     papirimg.style.border="2px solid red";
     olloimg.style.border="none";
 }
-function ollo(){
+function scis(){
     koimg.style.border="none"
     papirimg.style.border="none";
     olloimg.style.border="2px solid red";
