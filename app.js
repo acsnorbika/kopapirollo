@@ -8,6 +8,8 @@ let geppont = document.getElementById("geppont")
 
 let pontszam=0;
 let gepPontszam=0;
+
+
 function rock(){
     koimg.style.border="2px solid red"
     papirimg.style.border="none";
@@ -49,5 +51,21 @@ function jatek(jatekos)
             gepvalasztasa.src=""
             break;
     }
+
+    if (jatekos  === gepvalasztasa) {
+        eredmeny.textContent = "Döntetlen!";
+    } else if (
+        (jatekos === "ko" && gepvalasztasa === "ollo") ||
+        (jatekos === "papir" && gepvalasztasa === "ko") ||
+        (jatekos === "ollo" && gepvalasztasa === "papir")
+    ) {
+        eredmeny.textContent = "Te nyertél!";
+        pontszam++;
+    } else {
+        eredmeny.textContent = "Gép nyert!";
+        gepPontszam++;
+    }
+    pont.textContent = pontszam;
+    geppont.textContent = gepPontszam;
 
 }
