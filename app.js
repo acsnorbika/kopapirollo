@@ -12,16 +12,19 @@ function rock(){
     koimg.style.border="2px solid red"
     papirimg.style.border="none";
     olloimg.style.border="none";
+    jatek("ko")
 }
 function paper(){
     koimg.style.border="none"
     papirimg.style.border="2px solid red";
     olloimg.style.border="none";
+    jatek("papir")
 }
 function scis(){
     koimg.style.border="none"
     papirimg.style.border="none";
     olloimg.style.border="2px solid red";
+    jatek("ollo")
 }
 
 
