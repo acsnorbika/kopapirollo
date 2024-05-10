@@ -44,3 +44,6 @@ img:hover{
     width: 20%;
     max-width: 100%;
 }
+#pont,#geppont{
+    color: red;
+}
