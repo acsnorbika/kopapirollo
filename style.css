@@ -2,8 +2,43 @@ body{
     color:rgb(0, 196, 0);
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 img{
     width: 20%;
-    height: 20%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.kepek{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img:hover{
+    box-shadow: 5px 5px 15px rgb(202, 198, 198);
+}
+.container{
+    width:400px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgb(136, 192, 136);
+}
+.container:hover{
+    box-shadow: 5px 5px 15px rgb(84, 124, 84);
+}
+.gep{
+    display: flex;
+    justify-content: center;
+}
+#eredmeny{
+    font-size: 2.3em;
+}
+#gepValasztas{
+    width: 20%;
+    max-width: 100%;
 }
